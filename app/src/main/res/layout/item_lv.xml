@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Android新技能"
+        android:textColor="#444"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="春江潮水连海平....."
+        android:textColor="#898989"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descTv"
+        android:layout_marginTop="10dp"
+        android:paddingTop="3dp"
+        android:text="2015-05-04"
+        android:textColor="#898989"
+        android:textSize="12sp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/item_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/timeTv"
+        android:layout_alignTop="@id/timeTv"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/timeTv"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="data.json"
+        app:lottie_loop="true"
+        />
+
+    <TextView
+        android:id="@+id/phoneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/anim_lottie"
+        android:background="#2ED667"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="10086"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>
+</RelativeLayout>
