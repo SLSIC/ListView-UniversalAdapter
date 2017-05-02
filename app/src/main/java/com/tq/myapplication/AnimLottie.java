@@ -3,15 +3,12 @@ package com.tq.myapplication;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class AnimLottie extends AppCompatActivity implements View.OnClickListener {
+public class AnimLottie extends BaseActivity implements View.OnClickListener {
     private TextView tab_tv1;
     private TextView tab_tv2;
     private TextView tab_tv3;
@@ -19,8 +16,6 @@ public class AnimLottie extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_anim_lottie);
         initView();
     }
@@ -35,6 +30,7 @@ public class AnimLottie extends AppCompatActivity implements View.OnClickListene
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public void onClick(View v) {
         tab_tv1.setTextColor(Color.parseColor("#FF888888"));
         tab_tv2.setTextColor(Color.parseColor("#FF888888"));
