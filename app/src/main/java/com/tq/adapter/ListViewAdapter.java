@@ -7,7 +7,6 @@ import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.widget.TextView;
 
-import com.airbnb.lottie.LottieAnimationView;
 import com.tq.bean.ItemBean;
 import com.tq.bean.SpecialBean;
 import com.tq.myapplication.R;
@@ -41,14 +40,16 @@ public class ListViewAdapter extends ListViewBaseAdapter {
             ((TextView) vh.getView(R.id.titleTv)).setText(i.getTitle());
             ((TextView) vh.getView(R.id.descTv)).setText(i.getDesc());
             ((TextView) vh.getView(R.id.timeTv)).setText(i.getTime());
-            final LottieAnimationView anim = vh.getView(R.id.item_anim);
-/*        LottieComposition.Factory.fromAssetFileName(mContext, "data.json", new OnCompositionLoadedListener() {
-            @Override
-            public void onCompositionLoaded(LottieComposition composition) {
-                anim.setComposition(composition);
-                anim.playAnimation();
-            }
-        });*/
+/*            final LottieAnimationView anim = vh.getView(R.id.item_anim);
+*//*            LottieComposition.Factory.fromAssetFileName(mContext, "data.json", new OnCompositionLoadedListener() {
+                @Override
+                public void onCompositionLoaded(LottieComposition composition) {
+                    anim.setComposition(composition);
+                    anim.playAnimation();
+                }
+            });*//*
+            anim.setAnimation("data.json", LottieAnimationView.CacheStrategy.Strong);
+            anim.playAnimation();*/
 
             TextView tv = vh.getView(R.id.phoneTv);
             Drawable drawable = mContext.getResources().getDrawable(R.drawable.aut);

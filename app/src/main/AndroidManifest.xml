@@ -6,7 +6,6 @@
     <application
         android:name="com.tq.AppApplication"
         android:allowBackup="true"
-        android:fullBackupContent="6"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"

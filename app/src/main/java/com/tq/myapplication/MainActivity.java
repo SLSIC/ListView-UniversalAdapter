@@ -58,7 +58,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private void initDatas() {
         List<ItemBean> datas = new ArrayList<>();
-        int length = 100;
+        int length = 50;
         for (int i = 0; i < length; i++) {
             ItemBean itemBean = new ItemBean("WBY", "莫听穿林打叶声", "2015-05-04", "445577" + i);
             datas.add(itemBean);

@@ -26,7 +26,7 @@ public class BitMapUtil {
     private BitMapUtil() {
     }
 
-    public static final BitMapUtil getInstance() {
+    public static BitMapUtil getInstance() {
         if (instance == null) {
             synchronized (BitMapUtil.class) {
                 if (instance == null) {

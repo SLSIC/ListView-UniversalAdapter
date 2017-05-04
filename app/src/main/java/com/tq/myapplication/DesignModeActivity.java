@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 
 import com.tq.adapter.DesignModePagerAdapter;
 import com.tq.fragment.BuildDMFragment;
+import com.tq.fragment.RecommendFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +47,11 @@ public class DesignModeActivity extends BaseActivity {
         mFragmentList = new ArrayList<>();
         for (int i = 0; i < 7; i++) {
             mTitles.add("CS" + i);
-            mFragmentList.add(new BuildDMFragment());
+            if (i == 0) {
+                mFragmentList.add(new RecommendFragment());
+            } else {
+                mFragmentList.add(new BuildDMFragment());
+            }
         }
     }
 
